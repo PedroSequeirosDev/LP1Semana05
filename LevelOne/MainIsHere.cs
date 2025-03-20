@@ -13,6 +13,9 @@ namespace LevelOne
             Console.WriteLine("Hello LP1!");
         }
 
+        /// <summary>
+        /// this is a new feature!
+        /// </summary>
         public static void newfeature()
         {
             Console.WriteLine("We have a new feature!");
