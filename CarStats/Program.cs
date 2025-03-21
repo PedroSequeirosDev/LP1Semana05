@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Bogus;
 using Spectre.Console;
 
@@ -9,20 +10,30 @@ namespace CarStats
         private static void Main(string[] args)
         {
 
-            Randomizer.Seed = new Random(int.Parse(args[1]));
-            string brands = new Faker().Vehicle.Manufacturer();
-            int car_number = new Faker().Random.Number(1, 20);
+            int car_brands = int.Parse(args[0]);
+            Randomizer.Seed = new Random(car_brands);
+
+            Faker faker = new Faker();
+            List<string> brands = new List<string>();
+            Random random = new Random();
+
+            for (int i = 0; i < car_brands; i++)
+            {
+                brands.Add(faker.Vehicle.Manufacturer());
+            }
 
 
             BarChart bc = new BarChart();
-            AnsiConsole.Write(new BarChart()
-         .Width(60)
-         .Label("[green bold underline]Car Sales[/]")
-         .CenterLabel()
-         .AddItem(brands, car_number, Color.Yellow)
-         .AddItem(brands, car_number, Color.Green)
-         .AddItem(brands, car_number, Color.Red));
+            bc.Width(60);
+            bc.Label("[green bold underline]Car Sales[/]");
+            bc.CenterLabel();
 
+            foreach (string brand in brands)
+            {
+                bc.AddItem(brand, random.Next(0, 20), Color.MediumPurple2);
+            }
+
+            AnsiConsole.Write(bc);
         }
     }
 }
