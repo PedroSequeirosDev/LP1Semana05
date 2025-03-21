@@ -25,7 +25,7 @@ namespace CarStats
 
             BarChart bc = new BarChart();
             bc.Width(60);
-            bc.Label("[green bold underline]Car Sales[/]");
+            bc.Label("[green bold]Car Sales[/]");
             bc.CenterLabel();
 
             foreach (string brand in brands)
