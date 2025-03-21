@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelOne", "LevelOne\LevelO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelTwo", "LevelTwo\LevelTwo.csproj", "{45B99F9D-2333-41BF-8BD4-CFF9573D3ACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoGoodLib", "SoGoodLib\SoGoodLib.csproj", "{40A6909A-BC69-486B-B025-7971D787845A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{45B99F9D-2333-41BF-8BD4-CFF9573D3ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B99F9D-2333-41BF-8BD4-CFF9573D3ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B99F9D-2333-41BF-8BD4-CFF9573D3ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A6909A-BC69-486B-B025-7971D787845A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A6909A-BC69-486B-B025-7971D787845A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A6909A-BC69-486B-B025-7971D787845A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A6909A-BC69-486B-B025-7971D787845A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
